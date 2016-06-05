@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Stock prices</title>
+  <title>Stock lookup</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -35,27 +35,28 @@
 <div class="container">
 
   <div class="row">
-    <div class="one-third column" style="margin-top: 25%"></div>
-    <div class="one-third column" style="margin-top: 25%">
+    <div class="one-third column" style="margin-top: 30%"></div>
+    <div class="one-third column" style="margin-top: 30%">
       
     <form id='userinput_stockcode' method='post' action='/' >
-      <p>
-    <center>Enter stock code: <input type='text' name='stock_code' />
-      </p>
-      <p>
-    <input type='submit' value='Submit' /></center>
+    <center>
+        <label for='stock_code'>Enter stock code:</label>
+        <input type='text' placeholder="GOOG" id='stock_code' /></center>
+      <p><center>
+    <input type='submit' value='Lookup' /></center>
       </p>
     </form>  
-    
-      
     </div>
     
   </div>
+  <div class="row">
+    <div class="one-third column" style="margin-top: 45%">.</div>
+    <div class="one-third column" style="margin-top: 45%"> <center>
+    <a href="https://www.quandl.com/data/WIKI">Source data</a> and <a href="https://www.quandl.com/api/v3/databases/WIKI/codes">all codes</a> </center>
+    </div>
+  
 
 </div>    
-    
-  </div>
-
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
